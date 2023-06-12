@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Results</title>
+</head>
+
+<body>
+    <h2>Vote Results</h2>
+    <table>
+        <tr>
+            <th>Team Name</th>
+            <th>Vote Count</th>
+        </tr>
+        {% for team, count in vote_count.items() %}
+        <tr>
+            <td>{{ team }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/"><button>Back to Home</button></a>
+</body>
+
+</html>

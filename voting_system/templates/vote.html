@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vote</title>
+</head>
+
+<body>
+    <h2>Please select your class:</h2>
+    <form action="/vote" method="POST">
+        <select name="class">
+            <option value="Class 1">Class 1</option>
+            <option value="Class 2">Class 2</option>
+            <!-- Add options for all 28 classes -->
+        </select>
+        <br><br>
+        <input type="radio" id="candidate1" name="candidate" value="Candidate 1">
+        <label for="candidate1"><img src="path_to_candidate1_logo.png" alt="Candidate 1" width="200"
+                height="200"></label>
+        <br><br>
+        <input type="radio" id="candidate2" name="candidate" value="Candidate 2">
+        <label for="candidate2"><img src="path_to_candidate2_logo.png" alt="Candidate 2" width="200"
+                height="200"></label>
+        <br><br>
+        <input type="submit" value="Vote">
+    </form>
+</body>
+
+</html>
